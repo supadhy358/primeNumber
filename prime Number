@@ -1,0 +1,18 @@
+// This method give true value if the number is prime and give false if the value is composite.
+  public static boolean checkPrime(int num){
+        boolean bool=false;
+        if(num==0||num==1){
+            bool=false;
+        }
+        else{
+            for(int i=2;i<=num;i++){
+                if(num%i==0 &&num!=i){
+                    return false;
+                }
+                else{
+                    bool=true;
+                }
+            }
+        }
+        return bool;
+    }
